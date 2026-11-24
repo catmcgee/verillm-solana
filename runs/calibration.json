@@ -1,0 +1,87 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct@a09a35458c702b33eeacc393d103063234e8bc28",
+ "prompts": 6,
+ "tokens_per_prompt": 32,
+ "safety_factor": 10.0,
+ "hardware": [
+  "AMD EPYC 9555P 64-Core Processor (CPU)",
+  "NVIDIA A40",
+  "NVIDIA H100 80GB HBM3"
+ ],
+ "pairs": {
+  "AMD EPYC 9555P 64-Core Processor (CPU) -> AMD EPYC 9555P 64-Core Processor (CPU)": {
+   "score": 1.0871102826318486e-05,
+   "final": 0.000701904296875,
+   "pw": 0.9977678571428571,
+   "literal_pw": 0.0234375,
+   "pe": 0.0005580357142857143
+  },
+  "AMD EPYC 9555P 64-Core Processor (CPU) -> NVIDIA A40": {
+   "score": 1.5176634760437438e-05,
+   "final": 0.001068115234375,
+   "pw": 0.9983258928571429,
+   "literal_pw": 0.03180803571428571,
+   "pe": 0.0005580357142857143
+  },
+  "AMD EPYC 9555P 64-Core Processor (CPU) -> NVIDIA H100 80GB HBM3": {
+   "score": 1.2677890319017543e-05,
+   "final": 0.00079345703125,
+   "pw": 0.9980463298911527,
+   "literal_pw": 0.019257605358638012,
+   "pe": 0.0005580357142857143
+  },
+  "NVIDIA A40 -> AMD EPYC 9555P 64-Core Processor (CPU)": {
+   "score": 6.957161661245794e-06,
+   "final": 0.000457763671875,
+   "pw": 0.9980457844779452,
+   "literal_pw": 0.017308766052484645,
+   "pe": 0.0005580357142857143
+  },
+  "NVIDIA A40 -> NVIDIA A40": {
+   "score": 1.2800598514414476e-05,
+   "final": 0.000518798828125,
+   "pw": 0.9980457844779452,
+   "literal_pw": 0.02233389168062535,
+   "pe": 0.0005580357142857143
+  },
+  "NVIDIA A40 -> NVIDIA H100 80GB HBM3": {
+   "score": 9.56181150156356e-06,
+   "final": 0.000732421875,
+   "pw": 0.9988833054159687,
+   "literal_pw": 0.04380580357142857,
+   "pe": 0.0005580357142857143
+  },
+  "NVIDIA H100 80GB HBM3 -> AMD EPYC 9555P 64-Core Processor (CPU)": {
+   "score": 7.489798788031165e-06,
+   "final": 0.00042724609375,
+   "pw": 0.9980452387601229,
+   "literal_pw": 0.016755096341803964,
+   "pe": 0.0008370535714285714
+  },
+  "NVIDIA H100 80GB HBM3 -> NVIDIA A40": {
+   "score": 1.303292206161982e-05,
+   "final": 0.00042724609375,
+   "pw": 0.9980452387601229,
+   "literal_pw": 0.02234012845573862,
+   "pe": 0.0008370535714285714
+  },
+  "NVIDIA H100 80GB HBM3 -> NVIDIA H100 80GB HBM3": {
+   "score": 9.982419052383714e-06,
+   "final": 0.000579833984375,
+   "pw": 0.9988839285714286,
+   "literal_pw": 0.048549107142857144,
+   "pe": 0.0005580357142857143
+  }
+ },
+ "benign_worst_score": 1.5176634760437438e-05,
+ "benign_worst_final_abs": 0.001068115234375,
+ "benign_worst_pe": 0.0008370535714285714,
+ "benign_worst_pw": 0.9977678571428571,
+ "benign_worst_pw_authors_code": 0.016755096341803964,
+ "benign_token_flips": 0,
+ "tau": 0.00015176634760437439,
+ "epsilon": 0.01068115234375,
+ "attack_per_sample_error_rate": 0.9728887648809526,
+ "delta": 0.001,
+ "sample_bound": 8
+}
